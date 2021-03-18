@@ -1,6 +1,8 @@
 <template>
   <div>
     <v-app-bar app fixed class="navbar" clipped-right >
+
+
       <v-spacer></v-spacer>
       <h2 @click="$vuetify.goTo('#slider')">New</h2>
       <v-spacer></v-spacer>
