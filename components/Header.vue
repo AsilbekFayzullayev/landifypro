@@ -33,8 +33,7 @@ export default {
     links: [
       {id: 1, title: 'About Us', isActive: false,goTo: '#about'},
       {id: 2, title: 'Services', isActive: false,goTo: '#services'},
-      {id: 3, title: 'Portfolio', isActive: false,goTo: '#portfolio'},
-      {id: 4, title: 'Contact', isActive: false,goTo: '#contact'},
+      {id: 3, title: 'Portfolio', isActive: false,goTo: '#portfolio'}
     ]
   }),
   methods: {
