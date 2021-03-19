@@ -55,7 +55,6 @@ export default {
     },
     clicked(item) {
       this.$vuetify.goTo(item.goTo)
-      this.$store.dispatch('changeDrawer')
       this.drawer = true
     },
   }
@@ -98,9 +97,5 @@ export default {
 .linkss{
   border-bottom: 2px solid black;
 }
-.links:hover {
-  background-color: darkslategray;
-  color: white!important;
-  cursor: pointer;
-}
+
 </style>
