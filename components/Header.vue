@@ -38,7 +38,7 @@ export default {
       {id: 3, title: 'Portfolio', isActive: false, goTo: '#portfolio'},
       {id: 3, title: 'Contact', isActive: false, goTo: '#contact'}
     ],
-    drawer: false,
+    drawer: true,
   }),
   methods: {
     borderBottom(link) {
