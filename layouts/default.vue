@@ -1,9 +1,10 @@
 <template>
   <v-app>
     <Header/>
-    <v-navigation-drawer absolute right style="z-index: 1000" v-model="getDrawer">
-        <p v-for="i of items" :key="i.id" class="text-center my-5 links" @click="clicked(i)">{{ i.title }}</p>
-    </v-navigation-drawer>
+
+<!--    <v-navigation-drawer absolute right style="z-index: 1000" v-model="getDrawer">-->
+<!--        <p v-for="i of items" :key="i.id" class="text-center my-5 links" @click="clicked(i)">{{ i.title }}</p>-->
+<!--    </v-navigation-drawer>-->
     <div class="text-center">
       <nuxt/>
     </div>
@@ -38,9 +39,5 @@ export default {
 </script>
 
 <style scoped>
-.links:hover {
-  background-color: darkslategray;
-  color: white;
-  cursor: pointer;
-}
+
 </style>

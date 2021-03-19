@@ -18,20 +18,26 @@
         </v-row>
       </v-col>
     </v-row>
-<!--    image-->
+    <!--    image-->
 
-    <v-card
-      :ripple="false"
-      class="portrait"
-      img="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-      height="400"
+    <v-parallax
+      dark
+      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      height="300"
     >
-      <p style="height: 50%" class="py-2">
+      <v-row style="height: 50%">
+        <v-col md="6" offset-md="3">
 
-      </p>
-      <p style="height: 50%;background-color: aliceblue;opacity: 0.6"></p>
-    </v-card>
+        </v-col>
+      </v-row>
+      <v-row style="height: 50%;background-color: aliceblue;opacity: 0.6;">
+        <v-col cols="12" style="color: black;opacity: 1">
+            <p>text</p>
+        </v-col>
+      </v-row>
+    </v-parallax>
   </div>
+
 </template>
 
 <script>
@@ -39,7 +45,7 @@ export default {
   name: "Services",
   data: () => ({
     data: [
-      'text 1','text2','text3','text4'
+      'text 1', 'text2', 'text3', 'text4'
     ],
     professions: [
       {

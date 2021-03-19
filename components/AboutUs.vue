@@ -114,12 +114,10 @@
     </v-row>
 
     <!--    image -->
-
-    <v-card
-      :ripple="false"
-      class="portrait"
-      img="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
-      height="500"
+    <v-parallax
+      dark
+      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      height="300"
     >
       <v-row>
         <v-col md="6" offset-md="3">
@@ -141,7 +139,8 @@
           </v-carousel>
         </v-col>
       </v-row>
-    </v-card>
+    </v-parallax>
+
   </div>
 </template>
 <script>
