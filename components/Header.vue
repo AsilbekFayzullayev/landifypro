@@ -6,7 +6,7 @@
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon class="barIcon" @click="clickBarIcon"></v-app-bar-nav-icon>
       <v-spacer></v-spacer>
-      <div class="linkes">
+      <div class="linkes font-weight-bold" style="opacity: 0.8;">
         <span
           class="mx-2"
           :class="link.isActive ? 'linkss' : ''"
@@ -22,8 +22,9 @@
       </div>
     </v-app-bar>
 
+<!-- show in responsive -->
     <div class="linkClass pt-2" :class="drawer ? 'd-none' : 'd-block'">
-      <p v-for="i of links" :key="i" class="text-center links" @click="clicked(i)">{{ i.title }}</p>
+      <p v-for="i of links" :key="i.id" class="text-center links"  @click="clicked(i)">{{ i.title }}</p>
     </div>
   </div>
 </template>
@@ -36,7 +37,7 @@ export default {
       {id: 1, title: 'About Us', isActive: false, goTo: '#about'},
       {id: 2, title: 'Services', isActive: false, goTo: '#services'},
       {id: 3, title: 'Portfolio', isActive: false, goTo: '#portfolio'},
-      {id: 3, title: 'Contact', isActive: false, goTo: '#contact'}
+      {id: 4, title: 'Contact', isActive: false, goTo: '#contact'}
     ],
     drawer: true,
   }),
@@ -91,7 +92,7 @@ export default {
   top: 0;
   width: 100% !important;
   z-index: 1100;
-  background-color: darkslategray;
+  background-color: lavender!important;
   opacity: 0.9
 }
 .linkss{
@@ -99,7 +100,7 @@ export default {
 }
 .links:hover {
   background-color: darkslategray;
-  color: white;
+  color: white!important;
   cursor: pointer;
 }
 </style>

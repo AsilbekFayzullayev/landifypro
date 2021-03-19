@@ -144,13 +144,16 @@
   </div>
 </template>
 <script>
+import img1 from "@/static/photo_2021-03-19_08-22-06.jpg"
+import img2 from "@/static/photo_2021-03-19_08-29-32.jpg"
+import img3 from "@/static/photo_2021-03-19_08-31-43.jpg"
 export default {
   name: "AboutUs",
   data: () => ({
     teams: [
-      {id: 1, name: 'Carl Doe', profession: 'founder', img: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'},
-      {id: 2, name: 'John Doe', profession: 'designer', img: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'},
-      {id: 3, name: 'Jenny Doe', profession: 'developer', img: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'},
+      {id: 1, name: 'Asilbek Fayzullayev', profession: 'Project Manager', img: img1},
+      {id: 2, name: 'Kamron Norboboyev', profession: 'Java developer', img: img2},
+      {id: 3, name: 'Temur Eshmurodov', profession: 'Front end developer', img: img3},
       {id: 4, name: 'Doe', profession: 'project manager', img: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'},
       {id: 5, name: 'Carl Doe', profession: 'smm', img: 'https://cdn.vuetifyjs.com/images/cards/docks.jpg'}
     ],
@@ -174,6 +177,7 @@ export default {
 
 <style scoped>
 .links {
+  color: white;
   cursor: pointer;
 }
 </style>

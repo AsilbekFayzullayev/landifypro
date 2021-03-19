@@ -28,7 +28,7 @@
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ut et voluptates repudiandae sint et molestiae non recusandae.
             </span>
 
-            <v-row style="width: 70%">
+            <v-row >
               <v-col class="mt-4">
                 <span class="font-weight-bold">Name *</span>
                 <v-text-field
@@ -40,7 +40,7 @@
                 ></v-text-field>
               </v-col>
             </v-row>
-            <v-row style="width: 70%">
+            <v-row >
               <v-col class="">
                 <span class="font-weight-bold">Email *</span>
                 <v-text-field
@@ -52,7 +52,7 @@
                 ></v-text-field>
               </v-col>
             </v-row>
-            <v-row style="width: 70%">
+            <v-row >
               <v-col class="">
                 <span class="font-weight-bold">Subject *</span>
                 <v-text-field
@@ -64,7 +64,7 @@
                 ></v-text-field>
               </v-col>
             </v-row >
-            <v-row style="width: 70%">
+            <v-row >
               <v-col class="">
                 <span class="font-weight-bold">Message *</span>
                 <v-textarea

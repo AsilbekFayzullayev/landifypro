@@ -52,11 +52,10 @@
     <v-row justify="center">
       <v-dialog
         v-model="dialog"
-        persistent
         max-width="400"
       >
-        <v-card>
-          <v-img :src="src">
+        <v-card class="card">
+          <v-img :src="src" >
             <v-btn style="position: absolute; right: 0" icon>
               <v-icon color="white" @click="dialog = false">mdi-close</v-icon>
             </v-btn>
@@ -102,7 +101,14 @@ export default {
   font-size: 10px;
   transition: all 2s ease-in-out;
 }
-
+.card{
+  display: block;
+}
+@media (max-width: 1024px) {
+  .card{
+    display: none;
+  }
+}
 .image:hover .imgText {
   display: block;
   font-size: 25px;

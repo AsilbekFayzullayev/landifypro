@@ -39,11 +39,11 @@ export default {
         text: 'text in slider 2',
       },
       {
-        src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+        src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
         text: 'text in slider 3',
       },
       {
-        src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+        src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
         text: 'text in slider 4',
       },
     ],
