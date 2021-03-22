@@ -105,7 +105,7 @@ export default {
       },
       {
         id: 2,
-        icon: '\'mdi-cloud',
+        icon: 'mdi-cloud',
         title: 'Web Design2',
         text: '  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud\n' +
           '          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\n' +
@@ -114,7 +114,7 @@ export default {
       },
       {
         id: 3,
-        icon: '\'mdi-telegram',
+        icon: 'mdi-telegram',
         title: 'Web Design3',
         text: '  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud\n' +
           '          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\n' +
@@ -123,7 +123,7 @@ export default {
       },
       {
         id: 4,
-        icon: '\'mdi-cloud',
+        icon: 'mdi-cloud',
         title: 'Web Design4',
         text: '  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud\n' +
           '          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\n' +
@@ -141,7 +141,7 @@ export default {
       },
       {
         id: 6,
-        icon: '\'mdi-cloud',
+        icon: 'mdi-phone',
         title: 'Web Design6',
         text: '  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud\n' +
           '          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit\n' +

@@ -28,7 +28,7 @@
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ut et voluptates repudiandae sint et molestiae non recusandae.
             </span>
 
-            <v-row >
+            <v-row>
               <v-col class="mt-4">
                 <span class="font-weight-bold">Name *</span>
                 <v-text-field
@@ -40,7 +40,7 @@
                 ></v-text-field>
               </v-col>
             </v-row>
-            <v-row >
+            <v-row>
               <v-col class="">
                 <span class="font-weight-bold">Email *</span>
                 <v-text-field
@@ -52,19 +52,17 @@
                 ></v-text-field>
               </v-col>
             </v-row>
-            <v-row >
+            <v-row>
               <v-col class="">
                 <span class="font-weight-bold">Subject *</span>
                 <v-text-field
                   v-model="formData.subject"
-                  :rules="nameRules"
                   outlined
                   dense
-                  required
                 ></v-text-field>
               </v-col>
-            </v-row >
-            <v-row >
+            </v-row>
+            <v-row>
               <v-col class="">
                 <span class="font-weight-bold">Message *</span>
                 <v-textarea
@@ -79,12 +77,31 @@
             <!-- send message btn -->
             <v-row>
               <v-col>
-                <v-btn color="white" class="border-none" elevation="0" style="border: 2px solid black!important">
+                <v-btn @click="sendMessageClick" color="white" class="border-none" elevation="0"
+                       style="border: 2px solid black!important">
                   <v-icon dense small>mdi-message</v-icon>
                   Send Message
                 </v-btn>
               </v-col>
             </v-row>
+            <v-snackbar
+              v-model="snackbar"
+              :timeout="4000"
+              :color="colorSnackbar"
+            >
+              {{ snackText }}
+
+              <template v-slot:action="{ attrs }">
+                <v-btn
+                  color="white"
+                  text
+                  v-bind="attrs"
+                  @click="snackbar = false"
+                >
+                  Close
+                </v-btn>
+              </template>
+            </v-snackbar>
           </v-col>
         </v-row>
       </v-col>
@@ -96,7 +113,10 @@
 export default {
   name: "Contact",
 
-  data:()=>({
+  data: () => ({
+    snackbar: false,
+    snackText: '',
+    colorSnackbar: '',
     nameRules: [
       v => !!v || '' +
         'required',
@@ -104,13 +124,26 @@ export default {
     emailRules: [
       v => /.+@.+/.test(v) || 'E-mail must be valid',
     ],
-    formData:{
+    formData: {
       name: '',
       email: '',
       subject: '',
       message: ''
     }
-  })
+  }),
+  methods: {
+    async sendMessageClick() {
+      this.snackbar = true
+      const {name, email} = this.formData
+      if (name === '' || email === '') {
+        this.colorSnackbar = 'red'
+        this.snackText = "Enter text !"
+      } else {
+        this.colorSnackbar = 'green'
+        this.snackText = "Ok, data sent."
+      }
+    }
+  }
 }
 </script>
 

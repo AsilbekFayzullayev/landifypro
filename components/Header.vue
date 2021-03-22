@@ -5,7 +5,6 @@
       <h2 @click="$vuetify.goTo('#slider')">New</h2>
       <v-spacer></v-spacer>
       <v-app-bar-nav-icon class="barIcon" @click="clickBarIcon"></v-app-bar-nav-icon>
-      <v-spacer></v-spacer>
       <div class="linkes font-weight-bold" style="opacity: 0.8;">
         <span
           class="mx-2"
@@ -26,6 +25,8 @@
     <div class="linkClass pt-2" :class="drawer ? 'd-none' : 'd-block'">
       <p v-for="i of links" :key="i.id" class="text-center links"  @click="clicked(i)">{{ i.title }}</p>
     </div>
+
+
   </div>
 </template>
 
@@ -91,7 +92,8 @@ export default {
   top: 0;
   width: 100% !important;
   z-index: 1100;
-  background-color: lavender!important;
+  background-color: gray!important;
+  color: white;
   opacity: 0.9
 }
 .linkss{
